@@ -52,7 +52,7 @@ function SignInContent() {
       if (result?.error) {
         setError(result.error);
       } else if (result?.ok) {
-        // Forzar recarga para que el layout actualice la sesión
+        
         window.location.href = '/dashboard';
       }
     } catch (err) {
